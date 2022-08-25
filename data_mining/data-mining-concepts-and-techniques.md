@@ -1,4 +1,5 @@
-_Original document: https://github.com/karanpratapsingh/system-design_
+_Original document: [here](pdf/Data-Mining-Concepts-and-Techniques-3rd-Ed.pdf)_
+
 
 _Trạng thái phiên dịch: **đang dịch**_
 
