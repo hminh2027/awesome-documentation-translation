@@ -1,6 +1,8 @@
-_Original document: https://github.com/donnemartin/system-design-primer_
+# System design primer
 
-_Trạng thái phiên dịch: **đang dịch**_
+_Original document: [https://github.com/donnemartin/system-design-primer](https://github.com/donnemartin/system-design-primer)_
+
+\*Trạng thái phiên dịch: **đang dịch\***
 
 # Động lực
 
@@ -10,7 +12,7 @@ Chuẩn bị cho các buổi phỏng vấn thiết kế hệ thống
 
 >
 
-## Học cách để thiết kế các hệ thống quy mô lớn
+### Học cách để thiết kế các hệ thống quy mô lớn
 
 Việc học cách thiết kế các hệ thống có khả năng mở rộng sẽ giúp bạn trở thành một kĩ sư giỏi hơn.
 
@@ -18,13 +20,13 @@ Thiết kế hệ thống là một chủ đề rộng lớn. Có **rất nhiề
 
 Repo này là một **bộ sưu tầm các tài nguyên** giúp bạn tìm hiểu cách để xây dựng các hệ thống trên quy mô lớn.
 
-## Học hỏi từ các cộng động mã nguồn mở
+### Học hỏi từ các cộng động mã nguồn mở
 
 Đây là một dự án mã nguồn mở được cập nhật liên tục.
 
 Mọi sự đóng góp đều được hoan nghênh!
 
-## Chuẩn bị cho buổi phỏng vấn thiết kế hệ thống
+### Chuẩn bị cho buổi phỏng vấn thiết kế hệ thống
 
 Ngoài các buổi phỏng vấn code, thiết kế hệ thống đã trở thành một **phần thiết yếu** trong **quy trình phỏng vấn kỹ thuật** tại nhiều công ty công nghệ.
 
@@ -40,7 +42,7 @@ Các chủ đề bổ sung để chuẩn bị phỏng vấn:
 
 # Anki flashcards
 
-![Untitled](images/Untitled.png)
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/374b2794-e8cb-449a-a59d-e7e6f67a5843/Untitled.png)
 
 Các bộ bài [Anki flashcard](https://apps.ankiweb.net/) được cung cấp sử dụng phương pháp spaced-repitition để giúp bạn nhớ các khái niệm chính trong thiết kế hệ thống.
 
@@ -50,11 +52,11 @@ Các bộ bài [Anki flashcard](https://apps.ankiweb.net/) được cung cấp s
 
 Rất tiện lợi để sử dụng dù bạn đang làm gì đi nữa.
 
-## Tài nguyên code: Các thử thách lập trình đầy tính tương tác
+### Tài nguyên code: Các thử thách lập trình đầy tính tương tác
 
 Bạn đang tìm kiếm các nguồn tài nguyên để giúp bạn chuẩn bị cho [Buổi phỏng vấn Code?](https://github.com/donnemartin/interactive-coding-challenges)
 
-![Untitled](images/Untitled%201.png)
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e03f9c79-dbfc-4c1d-ba96-04b4a1bf44f5/Untitled.png)
 
 Kiểm tra repo **[Interactive Coding Challenges](https://github.com/donnemartin/interactive-coding-challenges),** nó chứa một bộ bài Anki bổ sung:
 
@@ -83,7 +85,7 @@ Mỗi phần đều chứa các đường dẫn tới các tài liệu chuyên s
 
 >
 
-![Untitled](images/Untitled%202.png)
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/39279fde-59c5-49f5-a8aa-b503fab069cd/Untitled.png)
 
 … (dài quá)
 
@@ -91,7 +93,7 @@ Mỗi phần đều chứa các đường dẫn tới các tài liệu chuyên s
 
 > Các chủ đề được đề xuất để tham khảo dựa trên dòng thời gian phỏng vấn của bạn (ngắn, trung bình, dài)
 
-![Untitled](images/Untitled%203.png)
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e3c1d712-dc34-41ac-a360-43aef6ed5092/Untitled.png)
 
 **Q: Liệu tôi có cần biết tất cả những tài liệu đó để phỏng vấn không?**
 
@@ -131,7 +133,7 @@ Phỏng vấn thiết kế hệ thống là một cuộc hội thoại mở (g�
 
 Bạn có thể sử dụng các bước dưới đây để dẫn một cuộc thảo luận. Để củng cố quy trình này, chúng tôi khuyên bạn nên sử dụng các bước dưới đây để làm phần [Các câu hỏi phỏng vấn thiết kế hệ thống và các lời giải](https://github.com/donnemartin/system-design-primer#system-design-interview-questions-with-solutions).
 
-## Bước 1: Phác thảo các trường hợp sử dụng, các ràng buộc và các giả định
+### Bước 1: Phác thảo các trường hợp sử dụng, các ràng buộc và các giả định
 
 Hãy thu thập các yêu cầu và xác định phạm vi của vấn đề. Đặt ra các câu hỏi để làm rõ các trường hợp sử dụng và các ràng buộc đi kèm. Cuối cùng là thảo luận về các giả định của bạn.
 
@@ -144,14 +146,14 @@ Hãy thu thập các yêu cầu và xác định phạm vi của vấn đề. Đ
 - Chúng ta dự kiến bao nhiêu yêu cầu mỗi giây?
 - Tỷ lệ đọc và ghi dự kiến là bao nhiêu?
 
-## Bước 2: Tạo một thiết kế cấp cao
+### Bước 2: Tạo một thiết kế cấp cao
 
 Phác thảo một thiết kế cấp cao với tất cả các thành phần quan trọng.
 
 - Phác thảo các thành phần và các kết nối chính
 - Biện minh cho các ý tưởng của bạn
 
-## Bước 3: Thiết kế các thành phần cốt lõi
+### Bước 3: Thiết kế các thành phần cốt lõi
 
 Chúng ta hãy xem xét kỹ hơn các chi tiết của từng thành phần chính. Ví dụ, nếu bạn được yêu cầu thiết kế [một dịch vụ rút gọn url](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/pastebin/README.md) , bạn có thể thảo luận về các vấn đề sau:
 
@@ -164,7 +166,7 @@ Chúng ta hãy xem xét kỹ hơn các chi tiết của từng thành phần ch�
   - Tra cứu cơ sở dữ liệu
 - API và thiết kế hướng đối tượng
 
-## Bước 4: Mở rộng thiết kế
+### Bước 4: Mở rộng thiết kế
 
 Xác định và giải quyết các nút thắt trong phạm vi các ràng buộc nhất định. Ví dụ, bạn có cần những thứ dưới đây để giải quyết vấn đề về khả năng mở rộng không?
 
@@ -175,7 +177,7 @@ Xác định và giải quyết các nút thắt trong phạm vi các ràng bu�
 
 Hãy thảo luận về các giải pháp tiềm năng và sự đánh đổi. Mọi thứ đều có sự đánh đổi. Giải quyết các nút thắt đó bằng cách sử dụng [các nguyên tắc thiết kế hệ thống có khả năng mở rộng](https://github.com/donnemartin/system-design-primer#index-of-system-design-topics)
 
-## Tính toán nhẩm
+### Tính toán nhẩm
 
 Đôi khi, bạn có thể sẽ được yêu cầu phải tự mình thực hiện một số ước tính. Bạn có thể tham khảo các nguồn tài nguyên sau của [Appendix](https://github.com/donnemartin/system-design-primer#appendix):
 
@@ -183,7 +185,7 @@ Hãy thảo luận về các giải pháp tiềm năng và sự đánh đổi. M
 - [Sức mạnh của hai bảng](https://github.com/donnemartin/system-design-primer#powers-of-two-table)
 - [Giá trị độ trễ mà mọi lập trình viên nên biết](https://github.com/donnemartin/system-design-primer#latency-numbers-every-programmer-should-know)
 
-## (Các) nguồn đọc thêm
+### (Các) nguồn đọc thêm
 
 Tham khảo các liên kết sau để biết những ý tưởng hay hơn những câu hỏi phỏng vấn mong đợi:
 
@@ -200,13 +202,13 @@ Các câu trả lời nằm trong thư mục `solutions/`
 
 >
 
-## Thiết kế Pastebin.com (hoặc Bit.ly)
+### Thiết kế Pastebin.com (hoặc Bit.ly)
 
 [Xem bài tập và lời giải](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/pastebin/README.md)
 
-![Untitled](images/Untitled%204.png)
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ca7b10fc-4ef7-4688-8187-5e1d6d80a7ea/Untitled.png)
 
-## Thiết kế dòng thời gian Twitter và tìm kiếm (hoặc bảng tin Facebook và tìm kiếm)
+### Thiết kế dòng thời gian Twitter và tìm kiếm (hoặc bảng tin Facebook và tìm kiếm)
 
 [Xem bài tập và lời giải](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/twitter/README.md)
 
@@ -218,7 +220,7 @@ Bạn mới làm quen với thiết kế hệ thống?
 
 Trước tiên, bạn sẽ cần có kiến thức cơ bản về các nguyên tắc chung trong thiết kế hệ thống , tìm hiểu xem chúng là gì, cách chúng được ứng dụng cũng như ưu và nhược điểm của chúng.
 
-## Bước 1: Tham khảo các video bài giảng về khả năng mở rộng
+### Bước 1: Tham khảo các video bài giảng về khả năng mở rộng
 
 [Bài giảng về khả năng mở rộng ở Harvard](https://www.youtube.com/watch?v=-W9F__D3oY4)
 
@@ -230,7 +232,7 @@ Trước tiên, bạn sẽ cần có kiến thức cơ bản về các nguyên t
   - Nhân rộng cơ sở dữ liệu (Database replication)
   - Phân vùng cơ sở dữ liệu (Database partitioning)\*\*\*\*
 
-## Bước 2: Tham khảo các bài viết về khả năng mở rộng
+### Bước 2: Tham khảo các bài viết về khả năng mở rộng
 
 [Khả năng mở rộng](http://www.lecloud.net/tagged/scalability/chrono)
 
@@ -240,7 +242,7 @@ Trước tiên, bạn sẽ cần có kiến thức cơ bản về các nguyên t
   - [Caches](http://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache)
   - [Chủ nghĩa không đồng bộ](http://www.lecloud.net/post/9699762917/scalability-for-dummies-part-4-asynchronism) (Asynchronism)
 
-## Các bước tiếp theo
+### Các bước tiếp theo
 
 Tiếp đến, chúng ta sẽ xem xét những sự đánh đổi ở cấp độ cao:
 
@@ -261,7 +263,7 @@ Một cách nhìn khác về hiệu năng và khả năng mở rộng:
 - Nếu bạn gặp vấn đề về hiệu suất, hệ thống của bạn sẽ chậm đối với một người dùng
 - Nếu bạn gặp vấn đề về khả năng mở rộng, hệ thống của bạn sẽ nhanh đối với một người dùng nhưng lại chậm khi phải load nặng (ví dụ như nhiều người dùng)
 
-## (Các) nguồn đọc thêm
+### (Các) nguồn đọc thêm
 
 - [A word on scalability](http://www.allthingsdistributed.com/2006/03/a_word_on_scalability.html)
 - [Scalability, availability, stability, patterns](http://www.slideshare.net/jboner/scalability-availability-stability-patterns/)
@@ -274,15 +276,15 @@ Một cách nhìn khác về hiệu năng và khả năng mở rộng:
 
 Nói chung, bạn nên nhắm đến **số thông lượng tối đa** với **độ trễ có thể chấp nhận được**
 
-## (Các) nguồn đọc thêm
+### (Các) nguồn đọc thêm
 
 • [HIểu rõ về độ trễ và thông lượng](https://community.cadence.com/cadence_blogs_8/b/sd/archive/2010/09/13/understanding-latency-vs-throughput)
 
 # Tính khả dụng với tính nhất quán
 
-## Định lý CAP
+### Định lý CAP
 
-![Untitled](images/Untitled%205.png)
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fe9fda1f-4235-403a-990a-2a31ab232833/Untitled.png)
 
 Đối với một hệ thống máy tính phân tán, bạn chỉ có thể đảm bảo hai trong số ba tùy chọn sau:
 
@@ -300,7 +302,7 @@ AP - **tính khả dụng (Availability)** và \***\*Partition Tolerance\*\***
 
 Vì các phản hồi trả về phiên bản dữ liệu dễ đọc nhất từ bất kỳ nút nào, nên không có gì đảm bảo rằng chúng luôn được cập nhật. Khi phân vùng xảy ra, có thể mất nhiều thời gian hơn một chút để dữ liệu từ thao tác ghi được phản ánh.
 
-## (Các) nguồn đọc thêm
+### (Các) nguồn đọc thêm
 
 - [CAP theorem revisited](http://robertgreiner.com/2014/08/cap-theorem-revisited/)
 - [A plain english introduction to CAP theorem](http://ksat.me/a-plain-english-introduction-to-cap-theorem)
@@ -311,23 +313,23 @@ Vì các phản hồi trả về phiên bản dữ liệu dễ đọc nhất t�
 
 Khi có nhiều bản sao của cùng một dữ liệu, chúng ta phải đối mặt với nhiều lựa chọn trong cách đồng bộ hóa để đảm bảo rằng khách hàng có một cái nhìn nhất quán về dữ liệu đó. Chúng ta hãy nhớ lại định nghĩa của tính nhất quán thông qua [định lý CAP](https://github.com/donnemartin/system-design-primer#cap-theorem). - Mọi thao tác đọc đều đọc dữ liệu hoặc lỗi thao tác ghi gần đây nhất.
 
-## Tính nhất quán yếu
+### Tính nhất quán yếu
 
 Sau một thao tác ghi, một thao tác đọc có thể đọc hoặc không đọc được dữ liệu bạn đã ghi. Mặc dù áp dụng cách tiếp cận tốt nhất có thể, những kết quả này có thể xảy ra.
 
 Cách tiếp cận này có thể được nhìn thấy trong các hệ thống như memcached. Tính nhất quán yếu hoạt động tốt trong các trường hợp sử dụng thời gian thực như VoIP, gọi điện video và các trò chơi nhiều người chơi trong thời gian thực. Ví dụ, nếu bạn đang gọi điện và bị ngắt kết nối trong vài giây, thì khi kết nối được khôi phục bạn sẽ không thể biết những gì đã được nói trong khoảng thời gian bị mất kết nối đó.
 
-## Tính nhất quán có độ trễ
+### Tính nhất quán có độ trễ
 
 Sau một thao tác ghi, thao tác đọc có thể đọc dữ liệu đó sau một khoảng thời gian nhất định (thường mất mili giây). Dữ liệu thường được sao chép bất đồng bộ. Cách tiếp cận này có thể được nhìn thấy trong các hệ thống như DNS và E-mail. Tính nhất quán có độ trễ đóng hoạt động tốt trong các hệ thống có tính khả dụng cao.
 
-## Tính nhất quán mạnh mẽ
+### Tính nhất quán mạnh mẽ
 
 Sau một thao tác ghi, dữ liệu có thể được đọc mà không bị lỗi. Dữ liệu thường được sao chép đồng bộ.
 
 Cách tiếp cận này có thể được nhìn thấy trong các hệ thống như hệ thống tệp, RDBMS. Tính nhất quán mạnh mẽ hoạt động tốt trong các hệ thống yêu cầu giao dịch.
 
-## (Các) nguồn đọc thêm
+### (Các) nguồn đọc thêm
 
 - [Các giao dịch giữa nhiều trung tâm dữ liệu](http://snarfed.org/transactions_across_datacenters_io.html)
 
@@ -335,11 +337,11 @@ Cách tiếp cận này có thể được nhìn thấy trong các hệ thống 
 
 Có hai loại mẫu hỗ trợ tính khả dụng cao: **fail-ove**r và **replication**
 
-## Fail-over
+### Fail-over
 
 **Actie-passive**
 
-Với active-passive fail-over, các [heartbeat](https://www.notion.so/Final-14bfe5d5e6fd49f79b964b3b74ec0bc5) sẽ được gửi qua lại giữa hai loại máy chủ là máy chủ chủ động và máy chủ bị động ở chế độ chờ. Nếu heartbeat bị gián đoạn, máy chủ bị động sẽ lấy địa chỉ IP của máy chủ chủ động và tiếp tục dịch vụ.
+Với active-passive fail-over, các [heartbeat](https://www.notion.so/System-design-primer-14bfe5d5e6fd49f79b964b3b74ec0bc5) sẽ được gửi qua lại giữa hai loại máy chủ là máy chủ chủ động và máy chủ bị động ở chế độ chờ. Nếu heartbeat bị gián đoạn, máy chủ bị động sẽ lấy địa chỉ IP của máy chủ chủ động và tiếp tục dịch vụ.
 
 Việc máy chủ bị động đang chạy ở trạng thái chờ ‘hot’ hay nó cần được khởi động từ trạng thái chờ ‘lạnh’ sẽ xác định được thời lượng downtime. Chỉ các máy chủ chủ động mới được xử lý lưu lượng truy cập
 
@@ -351,23 +353,23 @@ Nếu hai máy chủ ở chế độ công khai, DNS sẽ cần phải biết IP
 
 Active-active fail-over khá giống với master-master fail-over
 
-## (Các) nhược điểm: fail-over
+### (Các) nhược điểm: fail-over
 
 - Fail-over yêu cầu nhiều phần cứng hơn và tăng thêm độ phức tạp
 - Có khả năng bị mất dữ liệu nếu máy chủ chủ động gặp lỗi và không kịp sao chép dữ liệu mới vừa ghi sang máy chủ bị động.
 
-## Replication
+### Replication
 
 \***\*Master-slave và master-master\*\***
 
-Chỉ đề này sẽ được bàn luận tại mục [Database](https://www.notion.so/Final-14bfe5d5e6fd49f79b964b3b74ec0bc5):
+Chỉ đề này sẽ được bàn luận tại mục [Database](https://www.notion.so/System-design-primer-14bfe5d5e6fd49f79b964b3b74ec0bc5):
 
 - [Master-slave replication](https://github.com/donnemartin/system-design-primer#master-slave-replication)
 - [Master-master replication](https://github.com/donnemartin/system-design-primer#master-master-replication)
 
-## Con số của tính khả dụng
+### Con số của tính khả dụng
 
-Tính khả dụng thường có thể được biểu thị bằng phần trăm khả năng cung cấp dịch vụ theo thời gian hoạt động (hoặc thời gian ngưng hoạt động). Tính khả dụng thường được đo dựa theo số lượng các số 9 ([Five Nines](https://www.notion.so/Final-14bfe5d5e6fd49f79b964b3b74ec0bc5)). Một dịch vụ với mức độ khả dụng 99,99% thường có bốn số 9.
+Tính khả dụng thường có thể được biểu thị bằng phần trăm khả năng cung cấp dịch vụ theo thời gian hoạt động (hoặc thời gian ngưng hoạt động). Tính khả dụng thường được đo dựa theo số lượng các số 9 ([Five Nines](https://www.notion.so/System-design-primer-14bfe5d5e6fd49f79b964b3b74ec0bc5)). Một dịch vụ với mức độ khả dụng 99,99% thường có bốn số 9.
 
 \***\*mức độ khả dụng 99.9% - ba số 9\*\***
 
@@ -391,7 +393,7 @@ Tính khả dụng thường có thể được biểu thị bằng phần trăm
 
 Nếu một dịch vụ chứa nhiều thành phần dễ bị lỗi thì tính khả dụng tổng thể của dịch vụ đó sẽ phụ thuộc vào các thành phần đó là song song hay tuần tự.
 
-<sub>Tuần tự</sub>
+Tuần tự
 
 Tính khả dụng tổng thể sẽ bị giảm nếu hai thành phần có tính khả dụng dưới 100% in sequence?:
 
@@ -399,7 +401,7 @@ Tính khả dụng tổng thể sẽ bị giảm nếu hai thành phần có tí
 
 Nếu cả `Foo` và `Bar` đều có 99.9% tính khả dụng thì tổng giá trị khả dụng của chúng in sequnce sẽ là 99.8%
 
-<sub>Song song</sub>
+Song song
 
 Tính khả dụng tổng thể sẽ tăng lên nếu hai thành phần có tính khả dụng dưới 100% song song:
 
@@ -409,7 +411,7 @@ Nếu cả `Foo` và `Bar` đều có 99.9% tính khả dụng thì tổng giá 
 
 # Hệ thống tên miền
 
-![Untitled](images/Untitled%206.png)
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/37e244ca-4da6-48a6-9920-566df7d9532a/Untitled.png)
 
 Một hệ thống tên miền (DNS) sẽ dịch một tên miền như www.example.com sang một địa chỉ IP.
 
@@ -429,13 +431,13 @@ Các dịch vụ như CloudFlare hoặc Route 53 cung cấp các dịch vụ Man
 - [Latency-based](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html#routing-policy-latency)
 - [Geolocation-based](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html#routing-policy-geo)
 
-## (Các) nhược điểm: DNS
+### (Các) nhược điểm: DNS
 
 - Việc truy cập một máy chủ DNS gây ra một độ trễ nhẹ dù đã được giảm thiểu bằng phương thức caching đã được mô tả ở trên.
 - Việc quản lý máy chủ DNS có thể phức tạp và thường được quản lý bởi các chính phủ, IPS và các công ty lớn.
 - Các dịch vụ DNS gần đây đã bị tấn công DDoS, ngăn người dùng truy cập các trang web như Twitter mà không biết (các) địa chỉ IP của Twitter.
 
-## (Các) nguồn đọc thêm
+### (Các) nguồn đọc thêm
 
 - [Kiến trúc DNS](<https://technet.microsoft.com/en-us/library/dd197427(v=ws.10).aspx>)
 - [Wikipedia](https://en.wikipedia.org/wiki/Domain_Name_System)
@@ -450,13 +452,13 @@ Cung cấp nội dung từ các CDN có thể tăng hiệu năng một cách đ�
 - Người dùng nhận nội dung từ trung tâm dữ liệu gần họ
 - Các máy chủ của bạn không cần phải phục vụ các yêu cầu mà CDN hoàn tất
 
-## Push CDNs
+### Push CDNs
 
 Push CDNs nhận các nội dung mới mỗi khi có sự thay đổi xảy ra tại máy chủ của bạn. Bạn nhận hoàn toàn trách nhiệm cho việc cung cấp nội dung, cập nhập trực tiếp vào CDN và ghi lại các URL để trỏ tới CDN. Bạn có thể cấu hình khi nào nội dung hết hạn và khi nào nó được cập nhật. Nội dung được tải lên chỉ khi nó mới hoặc khi nó bị thay đổi, giảm thiểu lưu lượng truy cập nhưng tối đã hóa dung lượng lưu trữ.
 
 Các trang web có lượng truy cập nhỏ hoặc có nội dung không được cập nhật thường xuyên thì push CDNs là một lựa chọn tốt. Nội dung chỉ được đặt một lần duy nhất trên CDN, không phải một cách thường xuyên.
 
-## Pull CDNs
+### Pull CDNs
 
 Pull CDNs tải nạp nội dung mới từ máy chủ của bạn khi người dùng đầu tiên yêu cầu nội dung. Bạn giữ nguyên nội dung nằm trên máy chủ của bạn và ghi lại các URL để trỏ tới CDN. Điều này khiến cho yêu cầu đó bị trì hoãn cho tới khi nội dung được lưu vào bộ nhớ cache trên CDN.
 
@@ -464,9 +466,105 @@ Pull CDNs tải nạp nội dung mới từ máy chủ của bạn khi người 
 
 Các trang web có lượng truy cập cao sẽ hoạt động tốt với các pull CDNs, vì lượng truy cập được phân bổ đồng đều hơn và trên CDN chỉ còn lại các nội dung được yêu cầu gần đây
 
+# Bộ cân bằng tải
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0328da89-7222-41f7-97b5-7ad92ac737cc/Untitled.png)
+
+Load balancer phân phối các yêu cầu của client đến các tài nguyên máy tính như các máy chủ ứng dụng và cơ sở dữ liệu. Tùy từng trường hợp, load balancer trả về phản hồi từ nguồn tài nguyên tính toán cho client phù hợp. Load balancer có hiệu quả tại:
+
+- Ngăn chặn các request khỏi các máy chủ không lành mạnh
+- Ngăn chặn các tài nguyên bị quá tải
+- Giúp loại bỏ một lỗi duy nhất
+
+Các load balancer có thể được cài đặt bằng phần cứng (đắt xiền) hoặc bằng phần mềm như HAProxy.
+
+Các lợi ích khác như:
+
+- SSL termination - Giải mã các request đang tới và mã hóa các phản hồi của máy chủ để các máy chủ backend không phải thực hiện các hoạt động có tiềm năng tốn kém siêu cấp vũ trụ này.
+  - Loại bỏ nhu cầu cài đặt X.509 certificates trên mỗi máy chủ
+- Tính duy trì session - Cung cấp các cookie và định tuyến các request của một client cụ thể cho cùng một instance nếu các ứng dụng web không theo dõi các sessions
+
+Để tránh các lỗi, thuông thường ta sẽ setup nhiều load balancer trong cả active-passive mode và active-active mode.
+
+Các load balancer có thể định tuyến lưu lượng truy cập djwa trên các số liệu khác nhau, bao gồm:
+
+- Random
+- Least loaded
+- Session/cookies
+- Round robin hoặc weighted round robin
+- layer 4
+- layer 7
+
+### Layer 4 load balancing
+
+Layer 4 load balancer xem xét thông tin ở lớp truyền tải để quyết định các phân phối các request. Nói chung, điều này liên quan đến nguồn, địa chỉ IP đích và các cổng trong header, nhưng nó không liên quan đến các nội dung trong gói. Layer 4 load balancer chuyển tiếp các gói mạng đến và đi từ máy chủ ngược dòng, thực hiện Network Addess Translation (NAT).
+
+# Cache
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aba95c7c-20ae-473b-ae32-cf35600c3cce/Untitled.png)
+
+**Caching** (lưu trữ dữ liệu vào bộ nhớ đệm) có công dụng cải thiện đáng kể tốc độ tải trang và giảm thiểu khối lượng cần tải trên máy chủ và cơ sở dữ liệu của bạn. Ví dụ như ở mô hình trên, để lưu lại quá trình xử lý thực tế, đầu tiên **Dispatcher** (bộ phận điều phối) sẽ tra cứu trong bộ nhớ đệm xem **request** (yêu cầu) đó đã được gửi từ **Client** bao giờ chưa. Nếu nó tìm thấy thì nó sẽ lấy kết quả trong bộ nhớ đệm để trả về, còn nếu chưa thì sẽ chuyển tiếp yêu cầu đó cho **Worker** (bộ phận xử lý) để xử lý và lưu lại kết quả sau khi xử lý vào trong bộ nhớ đệm.
+
+## Caching tại client
+
+Cache có thể được thực hiện ở bên client (hệ điều hành hoặc trình duyệt), ở bên server, hoặc ở trong một lớp cache riêng biệt.
+
+## Caching tại CDN
+
+CDNs cũng được coi là một loại cache.
+
+## Caching tại máy chủ web
+
+[Reverse proxies](https://www.notion.so/System-design-primer-14bfe5d5e6fd49f79b964b3b74ec0bc5) và các ứng dụng hỗ trợ cache như [Varnish](https://www.varnish-cache.org/) có thể cung cấp các nội dung tĩnh và động một cách trực tiếp. Các máy chủ web cũng có thể cache các request, trả về response (phản hồi) mà không cần phải liên hệ với máy chủ của ứng dụng.
+
+## Caching tại cơ sở dữ liệu
+
+Cấu hình mặc định của cơ sở dữ liệu thường sử dụng sẵn bộ nhớ cache theo một vài cấp độ, nhằm tối ưu hóa cho trường hợp sử dụng chung nhất. Đối với một số trường hợp cụ thể, việc tinh chỉnh các cài đặt theo mẫu sẽ giúp bạn gia tăng đáng kể hiệu suất của cơ sở dữ liệu.
+
+## Caching tại ứng dụng
+
+Các ứng dụng **in-memory cache** (lưu trữ dữ liệu trong RAM của máy chủ) như **Memcached** và **Redis** thường lưu dữ liệu dưới dạng key-value, chúng được lưu giữa ứng dụng và bộ nhớ của bạn. Do dữ liệu được lưu trong **RAM** nên việc tương tác với chúng sẽ nhanh hơn nhiều số với lưu chúng trong cơ sở dữ liệu (nơi mà dữ liệu được ghi trên đĩa). Và bởi vì RAM có dung lượng ít hơn đĩa nên các nhà nghiên cứu đã tạo ra các thuật toán [vô hiệu hóa bộ nhớ cache](https://en.wikipedia.org/wiki/Cache_algorithms), ví dụ như **[LRU](<https://en.wikipedia.org/wiki/Cache_replacement_policies#Least_recently_used_(LRU)>)**, nhằm giúp cho RAM luôn có khả năng nhận dữ liệu mới nhất.
+
+Về ứng dụng Redis thì có các tính năng như:
+
+- Persistence options (ghi dữ liệu định kì lên đĩa cứng)
+- Các cấu trúc dữ liệu có sẵn như lists hoặc sorted sets.
+
+Cache được chia ra làm rất nhiều cấp độ khác nhau, tuy nhiên chúng đều thuộc vào một trong hai loại: **các truy vấn cơ sở dữ liệu** hoặc **các đối tượng**:
+
+- [Row level](https://www.quora.com/What-does-row-level-caching-in-the-database-mean) (cấp hàng)
+- Query-level (cấp truy vấn)
+- Fully-formed serializable objects (các đối tượng có khả năng chuyển đổi định dạng)
+- Fully-rendered HTML (mã HTML đã được render hoàn toàn)
+
+Nói chung, bạn nên tránh việc caching dữ liệu vào file bởi nó sẽ khiến cho công việc sao chép và tự động mở rộng trở nên khó khăn hơn.
+
+## Caching ở cấp truy vấn cơ sở dữ liệu
+
+Bất cứ khi nào bạn truy vấn cơ sở dữ liệu, câu truy vấn sẽ được băm và lưu vào bộ nhớ (dưới dạng **key**) cùng với kết quả của câu truy vấn đó (dưới dạng **value**). Tuy nhiên cách làm này lại gặp phải một vài vấn đề liên quan tới **cache expiration** (thời gian lưu trữ):
+
+- Rất khó để xóa một dữ liệu được cache có câu truy vấn phức tạp (key)
+- Nếu một phần nhỏ dữ liệu bị thay đổi thì đồng nghĩa với việc bạn phải xóa đi hết tất cả các câu truy vấn được cache có liên quan tới dữ liệu đó
+
+## Caching ở cấp độ đối tượng
+
+Coi dữ liệu của bạn như một đối tượng, tương tự như những gì bạn làm với mã ứng dụng của mình. Hãy tập hợp tất cả các tập dữ liệu từ cơ sở dữ liệu và biến chúng thành một class instance (cá thể lớp) hoặc thành một (hoặc nhiều) kiểu cấu trúc dữ liệu, với mục đích lưu trữ trong cache:
+
+- Khi dữ liệu của đối tượng thay đổi, xóa đối tượng đó xóa khỏi bộ nhớ cache.
+- Cho phép xử lý bất đồng bộ: các worker thu thập các đối tượng bằng cách sử dụng đối tượng được cache gần đây nhất.
+
+Gợi ý những thứ nên cache:
+
+- User sesssions (các phiên người dùng)
+- Các trang web đã được render hoàn toàn
+- Activity streams (các luồng hoạt động)
+- User graph data (dữ liệu biểu đồ người dùng)
+
+## Khi nào nên cập nhật lại cache
+
 # Danh sách các thuật ngữ chuyên ngành
 
 1. Node: Server thuộc Cluster
 2. Fail-over: khi có 1 hoặc nhiều node trong Cluster xảy ra vấn đề, các tài nguyên (resources) sẽ tự động được chuyển tới các node sẵn sàng phục vụ
 3. Heartbeat: là tín hiệu xuất phát từ các node với mục đích xác nhận rằng chúng còn sống và vẫn đang hoạt động
-4. Five nines: là cụm từ miêu tả tính khả dụng của một dịch vụ tại mức 99.999% (5 số 9) trong tổng số thời gian nó được yêu cầu.
+4. Five nines: là cụm từ miêu tả tính khả dụng của một dịch vụ theo mức 99.999% (5 số 9) trong tổng số thời gian nó được yêu cầu.
