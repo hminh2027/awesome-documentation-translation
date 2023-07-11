@@ -6,15 +6,15 @@ This repo exists for my personal learning purpose which contains documentation t
 | ----------------------------- | ------------------- | ------ | ---------- | ----------- | -------- |
 | AZ900                         | Cloud               | Github | Vietnamese | In progress | 22%      |
 | Cracking The Coding Interview | Algo/DS + Framework | Book   | English    | In progress | _        |
-| Data Mining                   | Data                | Book   | English    | Closed      | x        |
-| Pragmatic Programmer          | Mindset             | Book   | English    | Dropped     | 10%      |
-| System Design Interview       | System + Framework  | Book   | English    | In progress | _        |
-| System Design Primer          | System              | Github | English    | Dropped     | 33%      |
+| Data Mining                   | Data                | Book   | Vietnamese | Closed      | x        |
+| Pragmatic Programmer          | Mindset             | Book   | Vietnamese | Dropped     | 10%      |
+| System Design Interview       | System + Framework  | Book   | Vietnamese | In progress | _        |
+| System Design Primer          | System              | Github | Vietnamese | Dropped     | 33%      |
 
 Some explanations for those categories:
 - **Cloud**: learn fundamentals of cloud concept and cloud service/provider (Azure in this case)
 - **Algo/DS**: things about algorithms and data structures, doing some exercises and finding different ways to tickle them
-- **Framework**: instruction or guideline for you to do something (interview in this case)
+- **Framework**: instructions or guidelines for you to do something (interview in this case)
 - **Data**: relate to some procedures when processing the data before and after (closed)
-- **Mindset**: focus more about the mindset when approach anything related to technology and career (which should be on top of the list IMO)
+- **Mindset**: focus more on the mindset when approaching anything related to technology and career (which should be on top of the list IMO)
 - **System**: deep dive into diverse types of systems and familiarize with the core concepts when designing a large system
