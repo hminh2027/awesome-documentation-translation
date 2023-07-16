@@ -2,3 +2,5 @@
 2. Alias record: một loại DNS record cho phép trỏ domain name tới hostname thay vì địa chỉ IP
 3. Anycast: là hành động điều hướng request/traffic tới datacenter gần nhất
 4. On-premise: 
+5. Quota:
+6. 
