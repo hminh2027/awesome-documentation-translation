@@ -4,7 +4,7 @@ This repo exists for my personal learning purpose which contains documentation t
 
 | Name                          | Category            | Source | Trans To   | Status      | Progress |
 | ----------------------------- | ------------------- | ------ | ---------- | ----------- | -------- |
-| AZ900                         | Cloud               | Github | Vietnamese | In progress | 22%      |
+| AZ900                         | Cloud               | Github | Vietnamese | In progress | 46%      |
 | Cracking The Coding Interview | Algo/DS + Framework | Book   | English    | In progress | _        |
 | Data Mining                   | Data                | Book   | Vietnamese | Closed      | x        |
 | Pragmatic Programmer          | Mindset             | Book   | Vietnamese | Dropped     | 10%      |

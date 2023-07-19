@@ -1,4 +1,4 @@
-# Azure physical infrastructure
+# Azure Physical Infrastructure
 ![translation-status](https://img.shields.io/badge/Status-done-green)
 
 - Phần này sẽ cover các khái niệm/component thông dụng như:
