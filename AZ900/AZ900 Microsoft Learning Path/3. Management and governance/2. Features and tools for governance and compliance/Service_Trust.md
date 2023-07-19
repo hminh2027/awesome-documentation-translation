@@ -1,4 +1,5 @@
 # Service Trust Portal
+![translation-status](https://img.shields.io/badge/Status-need_review-orange)
 
 **1. What?**
 

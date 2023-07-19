@@ -1,4 +1,5 @@
 # Azure Policy
+![translation-status](https://img.shields.io/badge/Status-in_progress-blue)
 
 1. What?
     - Là 1 service cho phép tạo, assign và manage các policies để kiểm soát resources.

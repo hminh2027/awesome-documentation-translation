@@ -1,4 +1,5 @@
 ## Resource locks
+![translation-status](https://img.shields.io/badge/Status-need_review-orange)
 
 **1. What?**
 - Là 1 feature của Azure

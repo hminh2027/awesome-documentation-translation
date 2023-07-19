@@ -1,4 +1,5 @@
 # Azure Blueprints
+![translation-status](https://img.shields.io/badge/Status-in_progress-blue)
 
 1. What?
     - Là 1 tính năng giúp lặp lại các setting/config và policy cho subscription/environment
