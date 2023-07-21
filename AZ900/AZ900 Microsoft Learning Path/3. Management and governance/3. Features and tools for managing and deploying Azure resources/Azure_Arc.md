@@ -1,5 +1,5 @@
 # Azure Arc
-![translation-status](https://img.shields.io/badge/Status-in_progress-blue)
+![translation-status](https://img.shields.io/badge/Status-dropped-red)
 
 1. What?
 - 

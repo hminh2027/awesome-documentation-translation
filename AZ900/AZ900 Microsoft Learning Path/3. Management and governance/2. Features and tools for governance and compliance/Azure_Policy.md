@@ -6,11 +6,18 @@
 
 2. Why?
     - Rà soát các resource và đánh dấu những cái không tuân thủ policy áp dụng
-    - Ngăn chặn việc tạo ra các resource không tuân thủ
+    - Ngăn chặn việc tạo ra các resource không tuân thủ policy
     
 3. How?
-    - Cho phép tạo policy riêng lẻ hoặc theo nhóm (gọi là initiatives)
+    - Cho phép tạo policy riêng lẻ hoặc theo nhóm (gọi là initiatives*)
     - Set được cho từng level (resource, group resource, subscription, …)
     - Azure Policy có tính kế thừa (apply cho cha thì cho cả con)
     - Azure Policy có sẵn policy và initiative cho Storage, Networking, Compute, Security Center và Monitoring
-        - Vd: For example, if you define a policy that allows only a certain size for the virtual machines (VMs) to be used in your environment, that policy is invoked when you create a new VM and whenever you resize existing VMs. Azure Policy also evaluates and monitors all current VMs in your environment, including VMs that were created before the policy was created.
+        - Vd: Bạn tạo và apply policy quy định giới hạn size của VMs. Policy sẽ áp dụng cho cả những VMs tồn tại trước đó, đồng thời áp dụng cả khi tạo mới hoặc resize VM
+    
+## Azure Policy initiatives
+1. What?
+- 
+
+2. Why?
+3. How?
