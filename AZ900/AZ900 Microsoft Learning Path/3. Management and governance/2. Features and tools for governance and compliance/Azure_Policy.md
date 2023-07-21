@@ -1,5 +1,5 @@
 # Azure Policy
-![translation-status](https://img.shields.io/badge/Status-in_progress-blue)
+![translation-status](https://img.shields.io/badge/Status-done-green)
 
 1. What?
     - Là 1 service cho phép tạo, assign và manage các policies để kiểm soát resources.
@@ -17,7 +17,5 @@
     
 ## Azure Policy initiatives
 1. What?
-- 
-
-2. Why?
-3. How?
+- Là một cách để nhóm các policies liên quan lại với nhau
+- Giúp quản lý sự tuân thủ rộng hơn với mục đích lớn

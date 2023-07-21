@@ -1,5 +1,5 @@
 # Service Trust Portal
-![translation-status](https://img.shields.io/badge/Status-need_review-orange)
+![translation-status](https://img.shields.io/badge/Status-done-green)
 
 **1. What?**
 
