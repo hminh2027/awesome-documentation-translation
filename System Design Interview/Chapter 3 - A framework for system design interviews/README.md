@@ -1,7 +1,8 @@
 # Chương 3: Dàn ý chung cho các buổi phỏng vấn thiết kế hệ thống
-![translation-status](https://img.shields.io/badge/Status-in_progress-blue)
 
-Tưởng tượng rằng bạn vừa mới nhận được một lời mời phỏng vấn trực tiếp từ công ty mà bạn hàng mơ ước. Hôm đó hướng dẫn viên tuyển dụng gửi lịch trình của buổi phỏng vấn cho bạn. Bạn nhìn lướt qua danh sách đó và cảm thấy rằng mọi thứ hoàn toàn ổn, cho tới khi bạn đọc tới dòng chữ: Phỏng Vấn Thiết Kế Hệ Thống.
+![translation-status](https://img.shields.io/badge/Status-done-green)
+
+Tưởng tượng rằng bạn vừa mới nhận được một lời mời phỏng vấn trực tiếp từ công ty mà bạn hàng mơ ước. Hôm đó hướng dẫn viên tuyển dụng gửi lịch trình của buổi phỏng vấn cho bạn. Bạn nhìn lướt qua danh sách đó và cảm thấy rằng mọi thứ hoàn toàn ổn, cho tới khi bạn đọc tới dòng chữ: **Phỏng Vấn Thiết Kế Hệ Thống**.
 
 Các cuộc phỏng vấn thiết kế hệ thống thường khá là đáng sợ. Yêu cầu của có thể mơ hồ như “hãy thiết kế một sản phẩm X nổi tiếng?”. Các câu hỏi như vậy nghe thường mang vẻ rất bao la rộng lớn và nó thiếu sự rõ ràng một cách vô lý. Tới đây có lẽ bạn sẽ cảm thấy nản lòng và tôi hoàn toàn hiểu được điều đó. Xét cho cùng, làm sao mà một người có thể thiết kế lại một sản phẩm nổi tiếng đã được xây dựng bởi hàng trăm, thậm chí là hàng ngàn kỹ sư - chỉ trong một giờ?
 
@@ -88,11 +89,11 @@ Giả sử nếu đề bài là thiết kế một hệ thống newsfeed và b�
 
 Ở bước này chúng ta sẽ tập trung vào việc xây dựng một bản thiết kế cấp cao (high-level design) nhằm thuyết phục được nhà tuyển dụng. Bởi vậy việc hợp tác với nhà tuyển dụng trong quá trình thiết kế sẽ là một ý tưởng rất thông minh.
 
-- Đầu tiên bạn cần nghĩ ra một bản phác thảo thiết kế của hệ thống, sau đó nhờ nhà tuyển dụng đánh giá nó. Hãy coi họ như một người đồng nghiệp đang làm cùng team với bạn. Rất nhiều nhà tuyển dụng thích trò chuyện và tham gia vào việc thiết kế đấy.
+- Đầu tiên bạn cần nghĩ ra một bản phác thảo thiết kế của hệ thống, sau đó nhờ nhà tuyển dụng đánh giá nó. Hãy coi họ như một người đồng nghiệp đang làm cùng team với bạn. Rất nhiều nhà tuyển dụng thích trò chuyện và tham gia vào việc thiết kế đấy
 - Tiếp theo, hãy vẽ lên bảng hoặc ra giấy sơ đồ gồm các thành phần chính của hệ thống. Nó có thể bao gồm những thứ như client (mobile/web), APIs, web servers, data store, cache, CDN, message queue, …
-- Cuối cùng là thực hiện các phép tính nhẩm nhanh nhằm ước lượng xem liệu bản phác đó có có đáp ứng được khi mở rộng hệ thống hay không. Và đừng quên, hãy làm các phép tính đó một cách công khai để nhà tuyển dụng biết.
+- Cuối cùng là thực hiện các phép tính nhẩm nhanh nhằm ước lượng xem liệu bản phác đó có có đáp ứng được khi mở rộng hệ thống hay không. Và đừng quên, hãy làm các phép tính đó một cách công khai để nhà tuyển dụng biết
 
-Nếu có thể, hãy đi qua một vài use case cụ thể. Việc đó sẽ giúp bạn dễ định hình được bản thiết kế cấp cao và không bị bỏ xót các edge case mà bạn chưa tính đến.
+Nếu có thể, hãy đi qua một vài use case cụ thể. Việc đó sẽ giúp bạn dễ định hình được bản thiết kế cấp cao và không bị bỏ sót các edge case mà bạn chưa tính đến.
 
 Vậy bản thiết kế cấp cao này có nên chứa các API endpoint và database schema trong? Điều đó còn phụ thuộc vào bài toán mà bạn đang gặp phải. Nếu nó là một hệ thống lớn như “Thiết kế công cụ tìm kiếm Google” thì việc đó hơi low-level. Còn nếu nó chỉ là một hệ thống backend phục vụ cho trò Poker multi-player thì việc đó có thể chấp nhận được. Để chắc chắn thì hãy trao đổi thẳng với nhà tuyển dụng của bạn.
 
@@ -100,16 +101,16 @@ Vậy bản thiết kế cấp cao này có nên chứa các API endpoint và da
 
 Ta sẽ cùng xây dựng một bản thiết kế cấp cao với bài toán hồi nãy: “Thiết kế một hệ thống newsfeed”. Tạm thời bạn không cần phải hiểu cách mà hệ thống này thực sự hoạt động, chúng ta sẽ nói rõ hơn về nó ở chương 11.
 
-Trong thiết kế cấp cao, hệ thống sẽ được chia làm 2 luồng chính: publish bài viết và xây dựng newsfeed
+Trong thiết kế cấp cao, hệ thống này sẽ được chia làm 2 luồng chính: publish bài viết và xây dựng newsfeed.
 
-- Publish bài viết: khi một user đăng tải một bài viết, các dữ liệu tương ứng sẽ được lưu vào trong cache/database và bài viết đó sẽ được hiển thị trên newsfeed của bạn bè.
-- Xây dựng newsfeed: newsfeed sẽ được xây dựng bằng cách tổng hợp lại các bài viết của bạn bè user và hiển thị theo thứ tự thời gian.
+- Publish bài viết: khi một user đăng tải một bài viết, các dữ liệu tương ứng sẽ được lưu vào trong cache/database và bài viết đó sẽ được hiển thị trên newsfeed của bạn bè
+- Xây dựng newsfeed: newsfeed sẽ được xây dựng bằng cách tổng hợp lại các bài viết của bạn bè user và hiển thị theo thứ tự thời gian
 
 Hình 3-1 và 3-2 dưới đây lần lượt đại diện cho bản thiết kế cấp cao của 2 luồng chính kia.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/acb4cc37-6684-44cf-9e42-777a9b32be8c/Untitled.png)
+![Hình 3-1](./images/3-1.jpg)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/48bc01dd-359b-4d95-bc44-550a039b1730/Untitled.png)
+![Hình 3-2](./images/3-2.jpg)
 
 ## Bước 3 - Thiết kế chi tiết
 
@@ -120,19 +121,61 @@ Hình 3-1 và 3-2 dưới đây lần lượt đại diện cho bản thiết k�
 - Thu thập nhận xét/phản hồi của nhà tuyển dụng về bản thiết kế cấp cao
 - Dựa vào những phản hồi trên, xác định những phần mà mình cần phải tập trung vào
 
-Bạn sẽ cùng nhà tuyển dụng xác định xem đâu sẽ là những thành phần kiến trúc quan trọng mà ta cần phải ưu tiên. Và đặc biệt nhấn mạnh lần nữa rằng, không có buổi phỏng vấn nào là giống nhau cả. Đôi lúc, nhà tuyển dụng có thể gợi ý rằng họ muốn tập trung vào bản thiết kế cấp cao, đôi lúc họ lại muốn thảo luận về các đặc điểm liên quan tới hiệu suất của hệ thống (nếu bạn là senior), tập trung vào các yếu điểm và ước lượng tài nguyên của hệ thống. Tuy nhiên đa số các nhà tuyển dụng sẽ muốn bạn đi sâu vào chi tiết của một vài thành phần trong hệ thống. Ví dụ đối với hệ thống rút gọn URL ta có thể đi sâu vào việc thiết kế một hàm băm để biến một URL dài thành ngắn, hoặc đối với hệ thống chat thì có thể đi sâu vào việc giảm độ trễ của hệ thống hoặc cách để làm tính năng online/offline.
+Bạn sẽ cùng nhà tuyển dụng xác định xem đâu sẽ là những thành phần kiến trúc quan trọng mà ta cần phải ưu tiên. Và đặc biệt nhấn mạnh lần nữa rằng, không có buổi phỏng vấn nào là giống nhau cả. Đôi lúc nhà tuyển dụng có thể gợi ý rằng họ muốn tập trung vào bản thiết kế cấp cao, đôi lúc họ lại muốn thảo luận về các đặc điểm liên quan tới hiệu suất của hệ thống (nếu bạn là senior), tập trung vào các yếu điểm và ước lượng tài nguyên của hệ thống. Tuy nhiên đa số các nhà tuyển dụng sẽ muốn bạn đi sâu vào chi tiết của một vài thành phần cụ thể trong hệ thống. Ví dụ đối với hệ thống rút gọn URL ta có thể đi sâu vào việc thiết kế một hàm băm để biến một URL dài thành ngắn, hoặc đối với hệ thống chat thì có thể đi sâu vào việc giảm độ trễ của hệ thống hoặc cách để làm tính năng online/offline.
 
-Time management is essential as it is easy to get carried away with minute details that do not
-demonstrate your abilities. You must be armed with signals to show your interviewer. Try not
-to get into unnecessary details. For example, talking about the EdgeRank algorithm of
-Facebook feed ranking in detail is not ideal during a system design interview as this takes
-much precious time and does not prove your ability in designing a scalable system.
-Example
-At this point, we have discussed the high-level design for a news feed system, and the
-interviewer is happy with your proposal. Next, we will investigate two of the most important
-use cases:
+Quản lý thời gian cũng tương đối quan trọng trong buổi phỏng vấn bởi bạn sẽ rất dễ bị cuốn vào những việc gây lãng phí thời gian của mình. Bạn phải thể hiện được kĩ năng của mình cho nhà tuyển dụng thấy, bởi vậy đừng quá đi sâu vào những chi tiết thừa thãi. Ví dụ, việc bạn ngồi ba hoa về thuật toán EdgeRank đánh giá bài viết của Facebook có lẽ sẽ tiêu tốn kha khá lượng thời gian quý báu của bạn trong buổi phỏng vấn và không thể hiện được rằng bạn có thể thiết kế một hệ thống mở rộng tốt.
 
-1. Feed publishing
-2. News feed retrieval
-Figure 3-3 and Figure 3-4 show the detailed design for the two use cases, which will be
-explained in detail in Chapter 11.
+### Ví dụ
+
+Cho tới lúc này, chúng ta đã cùng nhau thảo luận về thiết kế cấp cao của hệ thống newsfeed vừa rồi và ta sẽ cho rằng nhà tuyển dụng thích nó. Bây giờ thì việc của ta là đào sâu vào 2 use-case quan trọng nhất:
+
+1. Publish bài viết
+2. Xây dựng newsfeed
+
+Hình 3-3 và 3-4 bên dưới sẽ là 2 bản thiết kế chi tiết cho 2 use-case trên, chúng sẽ được giải thích kĩ hơn ở chương 11.
+
+![Hình 3-3](./images/3-3.jpg)
+
+![Hình 3-4](./images/3-4.jpg)
+
+## Bước 4 - Tổng kết
+
+Ở bước cuối cùng này, nhà tuyển dụng có thể hỏi thêm các câu hỏi về những thiết kế trên kia hoặc họ cho bạn tự do thảo luận về các vấn đề ngoài lề. Dưới đây sẽ là một số tình huống giả định mà bạn có thể tham khảo:
+
+- Nhà tuyển dụng sẽ muốn bạn xác định điểm yếu của hệ thống và thảo luận về cách để có thể cải thiện nó. Đừng bao giờ khẳng định rằng thiết kế của bạn là hoàn hảo và không cần cải thiện nào, bởi sẽ luôn luôn có thứ cần cải thiện. Và đây sẽ là một cơ hội tốt để thể hiện rằng bạn là người có tư duy phản biện
+- Bạn cũng có thể tóm tắt lại bản thiết kế của mình cho nhà tuyển dụng. Điều này khá quan trọng nếu bạn vừa đề xuất một vài giải pháp cho hệ thống. Việc tóm tắt sẽ giúp cho nhà tuyển dụng nắm rõ hơn về hệ thống của bạn, đặc biệt là sau khi ta vừa trải qua một khoảng thời gian dài thiết kế
+- Error-case (lỗi server, mất mạng, …) cũng là một chủ đề hay để nói
+- Các vấn đề về Operation cũng khá thú vị. Hãy nói về cách bạn quản lý các số liệu và các error log. Bạn roll out hệ thống như thế nào?
+- Cách để mở rộng hệ thống, chẳng hạn như từ 1 triệu user lên 10 triệu user thì bạn sẽ thay đổi những gì?
+- Đề xuất thêm các cách cải thiện hệ thống nếu bạn còn thời gian
+
+Để tổng kết lại thì chúng ta sẽ có 1 danh sách gồm những việc Nên và Không Nên nhé.
+
+### Nên
+
+- Luôn đặt câu hỏi để làm rõ. Đừng tự suy diễn rồi cho mình là đúng.
+- Hiểu rõ các yêu cầu bài toán
+- Không có câu trả lời nào là đúng và hoàn hảo nhất cả. Giải pháp cho một công ty mới startup sẽ khác với giải pháp cho công ty lâu đời với hàng triệu nhân viên. Hãy chắn chắn rằng bạn hiểu rõ yêu cầu của hệ thống
+- Luôn để cho nhà tuyển dụng biết bạn đang nghĩ gì. Đừng quên giao tiếp với họ
+- Đưa ra nhiều cách tiếp cận khác nhau nếu được
+- Sau khi thống nhất với nhà tuyển dụng về bản thiết kế phác thảo, hãy đi sâu vào chi tiết từng thành phần của nó. Ưu tiên thiết kế cái quan trọng trước
+- Luôn hỏi ý kiến của nhà tuyển dụng về các ý tưởng của bạn. Một nhà tuyển dụng tốt sẽ làm việc với bạn như đồng nghiệp vậy
+- Đừng bao giờ bỏ cuộc!
+
+### Không Nên
+
+- Thiếu sự chuẩn bị trước đối với những câu hỏi dễ gặp
+- Nhảy thẳng vào giải pháp mà không làm rõ yêu cầu bài toán cũng như các giả định
+- Đi quá sâu vào chi tiết của một phần nào đó khi vừa bắt đầu buổi phỏng vấn. Làm bản thiết kế cấp cao trước, sau đó đi sâu sau
+- Ngại đặt câu hỏi nếu bị mắc
+- Im lặng và tránh giao tiếp
+- Nghĩ rằng thiết kế xong là xong, bạn luôn cần hỏi ý kiến của nhà tuyển dụng
+
+### Ước lượng thời gian cho từng bước
+
+Các câu hỏi của buổi phỏng vấn thiết kế hệ thống thường rất rộng và trong khoảnh 45p - 1 tiếng thì khó mà đi hết được toàn bộ thiết kế. Do đó việc quản lý thời gian là rất quan trọng. Vậy ta nên chia thời gian cho từng phần như thế nào? Phía dưới đây sẽ là một ví dụ về phân chia khoảng thời gian cho một buổi phỏng vấn 45 phút. Lưu ý rằng đây chỉ mang tính chất tham khảo, các mốc này có thể thay đổi dựa theo phạm vi của bài toán và yêu cầu của nhà tuyển dụng:
+
+- Bước 1: từ 3-10 phút
+- Bước 2: từ 10-15 phút
+- Bước 3: từ 10-25 phút
+- Bước 4: từ 3-5 phút
