@@ -4,12 +4,13 @@ This repo exists for my personal learning purpose which contains documentation t
 
 | Name                          | Category            | Source | Trans To   | Status      | Progress |
 | ----------------------------- | ------------------- | ------ | ---------- | ----------- | -------- |
-| AZ900                         | Cloud               | Github | Vietnamese | In progress | 46%      |
-| Cracking The Coding Interview | Algo/DS + Framework | Book   | English    | In progress | _        |
+| AZ900                         | Cloud               | Github | Vietnamese | Dropped     | 46%      |
+| Cracking The Coding Interview | Algo/DS + Framework | Book   | English    | Dropped     | _        |
 | Data Mining                   | Data                | Book   | Vietnamese | Closed      | x        |
 | Pragmatic Programmer          | Mindset             | Book   | Vietnamese | Dropped     | 10%      |
-| System Design Interview       | System + Framework  | Book   | Vietnamese | In progress | _        |
+| System Design Interview       | System + Framework  | Book   | Vietnamese | Dropped     | _        |
 | System Design Primer          | System              | Github | Vietnamese | Dropped     | 33%      |
+| Just JavaScript               | Mindset             | Book   | Vietnamese | In progress | 15%      |
 
 Some explanations for those categories:
 - **Cloud**: learn fundamentals of cloud concept and cloud service/provider (Azure in this case)
