@@ -79,9 +79,9 @@ Một điều quan trọng đó là thuộc tính không hề *chứa* giá tr�
 
 Có thể trước đó bạn đã nhầm lẫn và nghĩ rằng giá trị thì phải “tồn tại” trong object bởi vì rõ ràng là đoạn code của nó xuất hiện “trong” object. Điều này dễ dẫn đến việc hiểu nhầm, bởi vậy thay vào đó ta sẽ ví chúng là “những sợi dây”. Giờ hãy nhìn lại đoạn code phía trên một lần nữa và đảm bảo rằng bạn đã hiểu nó trước khi tiếp tục chương này.
 
-## Đọc một Thuộc tính
+## Truy cập một Thuộc tính
 
-Chúng ta có thể đọc giá trị của một thuộc tính bằng cách sử dụng dấu chấm (còn gọi là “dot notation”):
+Chúng ta có thể lấy giá trị của một thuộc tính bằng cách sử dụng dấu chấm (còn gọi là “dot notation”):
 
 ```jsx
 console.log(sherlock.age); // 64
@@ -89,7 +89,7 @@ console.log(sherlock.age); // 64
 
 Ở đây, `sherlock.age` là một *expression* - một câu hỏi gửi tới vũ trụ JavaScript. Để trả lời câu hỏi đó, đầu tiên JavaScript sẽ đi theo sợi dây `sherlock`:
 
-[Following the sherlock variable wire.webm](./medias/Following%20the%20sherlock%20variable%20wire.webm)
+[Following the sherlock variable wire.webm](https://github.com/hminh2027/awesome-documentation-translation/assets/57801022/17798317-a4c2-4a3a-a6f1-8678c8840a5a)
 
 Sợi dây dẫn tới một object. Từ object đó, JavaScript sẽ tiếp tục đi theo sợi dây thuộc tính `age`. Thuộc tính `age` này lại trỏ tới giá trị `64`, do đó `sherlock.age` sẽ là `64`.
 
@@ -123,7 +123,7 @@ sherlock.age = 65;
 
 Đi theo sợi dây `sherlock`, chọn sợi dây `age`:
 
-[Following the age property wire on the left side.webm](./medias/Following%20the%20age%20property%20wire%20on%20the%20left%20side.webm)
+[Following the age property wire on the left side.webm](https://github.com/hminh2027/awesome-documentation-translation/assets/57801022/456c4d34-9f3e-48b0-9ad6-4453758de4b2)
 
 Lưu ý rằng chúng ta không đi theo sợi dây `age` tới `64` mà chỉ quan tâm sợi dây là `age` thôi. Ở phía bên trái trong một phép gán, chúng ta đang tìm **sợi dây**.
 
@@ -133,13 +133,13 @@ Nhớ sợi dây mà chúng ta chọn rồi chứ? Đi tiếp thôi.
 
 Trong một phép gán thì bên phải sẽ luôn là một *giá trị*. Ở ví dụ trên, giá trị bên phải là số `65`. Giờ thì hãy cùng triệu hồi nó:
 
-[Evaluating the right side_ 65.webm](./medias/Evaluating%20the%20right%20side_%2065.webm)
+[Evaluating the right side_ 65.webm](https://github.com/hminh2027/awesome-documentation-translation/assets/57801022/f99b1f56-1f61-4054-8436-d707c2734b70)
 
 Giờ ta đã sẵn sàng để gán giá trị rồi.
 
 Bước cuối cùng, chúng ta trỏ sợi dây bên trái tới giá trị bên phải:
 
-[Changing the age property wire to 65.webm](./medias/Changing%20the%20age%20property%20wire%20to%2065.webm)
+[Changing the age property wire to 65.webm](https://github.com/hminh2027/awesome-documentation-translation/assets/57801022/7870656e-41fc-4beb-b359-177bff55ba8e)
 
 Và hoàn tất! Từ giờ trở đi, `sherlock.age` sẽ có giá trị `65`
 
