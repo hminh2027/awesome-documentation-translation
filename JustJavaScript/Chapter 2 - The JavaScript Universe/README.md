@@ -32,7 +32,7 @@ Vào một đêm trăng sáng, tôi nhìn lên bầu trời JavaScriipt và th�
 
 ![Universe](./medias/universe.png)
 
-"Khoan đã" - có thể bạn sẽ nghĩ, "Mình tưởng giá trị thì luôn phải ở trong code của mình chứ!?". Lúc này, tôi yêu cầu bạn phải hoàn toàn in phải điều đó. Chúng ta sẽ cần một vào chương nữa để chứng minh điều đó. [Hãy cho nó 5 phút](https://signalvnoise.com/posts/3124-give-it-five-minutes). Tôi biết mình đang làm gì.
+"Khoan đã" - có thể bạn sẽ nghĩ, "Mình tưởng giá trị thì luôn phải ở trong code của mình chứ!?". Lúc này, tôi yêu cầu bạn phải hoàn toàn tin vào điều đó. Chúng ta sẽ cần một vào chương nữa để chứng minh điều đó. [Hãy cho nó 5 phút](https://signalvnoise.com/posts/3124-give-it-five-minutes). Tôi biết mình đang làm gì.
 
 ## Giá trị
 

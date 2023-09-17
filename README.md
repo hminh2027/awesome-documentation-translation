@@ -10,7 +10,7 @@ This repo exists for my personal learning purpose which contains documentation t
 | Pragmatic Programmer          | Mindset             | Book   | Vietnamese | Dropped     | 10%      |
 | System Design Interview       | System + Framework  | Book   | Vietnamese | Dropped     | _        |
 | System Design Primer          | System              | Github | Vietnamese | Dropped     | 33%      |
-| Just JavaScript               | Mindset             | Book   | Vietnamese | In progress | 15%      |
+| Just JavaScript               | Mindset             | Book   | Vietnamese | In progress | 25%      |
 
 Some explanations for those categories:
 - **Cloud**: learn fundamentals of cloud concept and cloud service/provider (Azure in this case)
