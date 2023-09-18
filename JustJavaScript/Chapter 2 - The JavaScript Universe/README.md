@@ -6,7 +6,7 @@ Giá trị là gì? Đây là một khái niệm khá khó để giải thích.
 
 Một tọa độ trong hình học? Một từ trong ngôn ngữ loài người? Giá trị là một chủ đề cơ bản trong JavaScript - do đó chúng ta không thể định nghĩa nó bằng các thuật ngữ khác được. 
 
-Thay vào đó, chúng ta sẽ định nghĩa nó thông qua các ví dụ cụ thể. Các con số và chuỗi là giá trị. Object và hàm cũng là giá trị.
+Thay vào đó, chúng ta sẽ định nghĩa nó thông qua các ví dụ cụ thể. Numnber và string là giá trị. Object và function cũng là giá trị.
 
 Có rất nhiều thứ mà không phải là *giá trị*, chẳng hạn như câu điều kiện `if`, vòng lặp, khai báo biến,...
 
@@ -154,16 +154,14 @@ Expression là những câu hỏi mà JavaScript có thể trả lời được 
 
 [INSERT WEJIO HERE]
 
-If the word “expression” confuses you, think of it as a piece of code that expresses a value. You might hear people say that 2 + 2 “results in” or “evaluates to” 4. These are all different ways to say the same thing.
-
-We ask JavaScript 2 + 2, and it answers with 4. Expressions always result in a single value. Now we know enough about expressions to be dangerous!
-
 ## Tóm lại
 
-Let’s recap what we know so far:
+1. Có giá trị và có code. Giá trị là những thứ không tồn tại trong code, nhưng có thể trỏ tới từ code của chúng ta.
 
-There are values, and then there’s code. We can think of values as different things “floating” in our JavaScript universe. They don’t exist inside our code, but we can refer to them from our code.
-There are two categories of values: there are Primitive Values, and then there are Objects and Functions. In total, there are nine separate types. Each type serves a specific purpose, but some are rarely used.
-Some values are lonely. For example, null is the only value of the Null type, and undefined is the only value of the Undefined type. As we will learn later, these two lonely values are quite the troublemakers!
-We can ask questions with expressions. Expressions exist in our code, so they are not values. Rather, JavaScript will answer our expressions with values. For example, the 2 + 2 expression is answered with the value 4.
-We can inspect the type of something by wrapping it in a typeof expression. For example, typeof(4) results in the string value "number".
+2. Có 2 loại giá trị: giá trị nguyên thủy và Object + Function. Có 9 kiểu dữ liệu với mục đích sử dụng khác nhau.
+
+3. Có những giá trị độc nhất. Ví dụ `null` là giá trị duy nhất của kiểu Null và `undefined` cũng vậy. Càng học chúng ta sẽ thấy 2 giá trị này gây ra khá nhiều rắc rối!
+
+4. Ta có thể hỏi bằng cách dùng expression. Expression không phải giá trị, và JavaScript sẽ trả lời expression bằng giá trị. Ví dụ đoạn code `2 + 2` thì câu trả lời là giá trị `4`.
+
+5. Ta có thể xem kiểu dữ liệu của giá trị bằng cách dùng `typeof`. Ví dụ `typeof(4)` sẽ là `"number"`.
