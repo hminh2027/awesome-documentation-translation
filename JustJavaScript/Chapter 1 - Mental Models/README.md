@@ -59,7 +59,7 @@ Nhưng nhờ vào sự phát triển của thùy trán, loài người đồng t
 
 Và bởi vì hệ thống "chậm" này tiêu hao nhiều năng lượng nên chúng ta thường có xu hướng sử dụng hệ thống "nhanh" - ngay cả khi làm những việc cần nhiều chất xám như viết code.
 
-Hãy tưởng tượng rằng bạn đang ngập giữa một núi công việc và bạn muốn xác định thật nhanh xem cái hàm này nó làm gì. Bạn liếc qua nó:
+Hãy tưởng tượng rằng bạn đang ngập giữa một núi công việc và bạn muốn xác định thật nhanh xem cái function này nó làm gì. Bạn liếc qua nó:
 
 ```jsx
 function duplicateSpreadsheet(original) {
@@ -78,11 +78,11 @@ function duplicateSpreadsheet(original) {
 ```
 
 Bạn nhận thấy những điều sau:
-- Hàm này tạo bản sao của bảng tính.
+- Function này tạo bản sao của bảng tính.
 - Nó quẳng ra lỗi nếu bảng tính gốc chưa được lưu lại.
 - Nó đặt tiêu đề cho bản sao mới là "Copy of".
 
-Điều mà bạn có lẽ sẽ bỏ qua (nếu không bỏ qua thì bạn làm tốt đấy!) đó là hàm này ***đồng thời*** cũng vô tình thay đổi tiêu đề của bảng tính gốc. Việc bỏ qua những lỗi như thế này là chuyện thường ngày xảy ra với các lập trình viên.
+Điều mà bạn có lẽ sẽ bỏ qua (nếu không bỏ qua thì bạn làm tốt đấy!) đó là function này ***đồng thời*** cũng vô tình thay đổi tiêu đề của bảng tính gốc. Việc bỏ qua những lỗi như thế này là chuyện thường ngày xảy ra với các lập trình viên.
 
 Giờ bạn đã biết là code có bug rồi, liệu bạn có đọc code theo kiểu khác không? Nếu ban đầu bạn sử dụng hệ thống "nhanh" thì giờ bạn có lẽ sẽ muốn chuyển sang hệ thống "chậm" rồi đấy.
 
