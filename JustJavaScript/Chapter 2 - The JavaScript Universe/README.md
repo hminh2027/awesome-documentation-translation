@@ -20,28 +20,28 @@ Một khái niệm hay bị nhầm lẫn mà chúng ta cần phải làm rõ khi
 
 ![Little Prin](./medias/little_prin.png)
 
-Tôi là cậu bé đang đứng trên một hành tinh nhỏ, trên tay là một danh sách các chỉ dẫn. Danh sách đó đại diện cho đoạn code của tôi. Tôi đọc một lượt qua danh sách đó và nhận thấy có khá nhiều thứ đang diễn ra - có câu điều kiện `if`, có khai báo biến, có những dấu phẩy và dấu ngoặc nhọn.
+Tôi là một cậu bé đang đứng trên một hành tinh nhỏ, trên tay là một danh sách chứa các chỉ dẫn. Danh sách đó đại diện cho đoạn code của tôi. Thoáng lướt qua danh sách đó, tôi nhận thấy có rất nhiều thứ đang diễn ra - có câu điều kiện `if`, có khai báo biến, có những dấu phẩy và dấu ngoặc nhọn.
 
-Đoạn code của tôi chứa những chỉ dẫn như "gọi function này", "làm việc kia nhiều lần", hoặc thậm chí là "quẳng ra lỗi". Tôi đọc các chỉ dẫn đó, từng bước một, trên hành tinh bé nhỏ của tôi.
+Đoạn code của tôi chứa những chỉ dẫn như "gọi function này", "lặp lại việc kia", hoặc thậm chí là "quẳng ra lỗi". Tôi đọc các chỉ dẫn đó, từng bước một, trên hành tinh bé nhỏ của tôi.
 
 *Nhưng thi thoảng tôi vẫn ngước lên nhìn.*
 
-Vào một đêm trăng sáng, tôi nhìn lên bầu trời JavaScriipt và thấy rất nhiều các giá trị ở đó: boolean, number, string, symbol, function và object, `null` và `undefined` - trời đất! Tôi có thể chạm vào chúng, nhưng chúng không hề tồn tại trong code của tôi.
+Vào một đêm trăng sáng, tôi nhìn lên bầu trời JavaScript và thấy rất nhiều các giá trị ở đó: boolean, number, string, symbol, function và object, `null` và `undefined` - trời đất! Tôi có thể chạm vào chúng, nhưng chúng không hề tồn tại trong code của tôi.
 
 *Trong vũ trụ JavaScript của chúng ta, các giá trị trôi nổi bồng bềnh trên không trung.*
 
 ![Universe](./medias/universe.png)
 
-"Khoan đã" - có thể bạn sẽ nghĩ, "Mình tưởng giá trị thì luôn phải ở trong code của mình chứ!?". Lúc này, tôi yêu cầu bạn phải hoàn toàn tin vào điều đó. Chúng ta sẽ cần một vào chương nữa để chứng minh điều đó. [Hãy cho nó 5 phút](https://signalvnoise.com/posts/3124-give-it-five-minutes). Tôi biết mình đang làm gì.
+"Khoan đã" - có thể bạn nghĩ, "Mình tưởng giá trị thì luôn phải ở trong code của mình chứ!?". Lúc này, tôi yêu cầu bạn phải hoàn toàn tin vào điều đó. Chúng ta sẽ cần một vào chương nữa để chứng minh điều đó. [Ta cần thêm thời gian](https://signalvnoise.com/posts/3124-give-it-five-minutes). Tôi biết mình đang làm gì.
 
 ## Giá trị
 
 Nhìn chung thì có tồn tại 2 loại giá trị.
 
 ### Giá trị nguyên thủy - Primitive value
-**Giá trị nguyên thủy** giống như là những ngôi sao vậy - lạnh lẽo và xa xôi, nhưng chúng luôn ở quanh chúng ta khi cần. Thậm chí chúng ta có thể tìm và trỏ tới chúng từ trong code. Chúng có thể là number, string hay bất cứ giá trị nào khác. Tất cả các giá trị nguyên thủy đều sở hữu một tính chất chung: **luôn luôn bất biến trong vũ trụ JavaScript của chúng ta. Chúng ta có thể trỏ tới chúng, nhưng lại không thể tạo, phá hủy hay thay đổi chúng.**
+**Giá trị nguyên thủy** giống như là những ngôi sao vậy - lạnh lẽo và xa xôi, nhưng chúng luôn ở quanh chúng ta khi cần. Thậm chí chúng ta có thể tìm và trỏ tới chúng từ trong code. Chúng có thể là number, string hay bất cứ giá trị nào khác. Tất cả các giá trị nguyên thủy đều sở hữu một tính chất chung: **luôn luôn bất biến trong vũ trụ JavaScript của chúng ta. Chúng ta có thể trỏ tới chúng, nhưng lại không thể tạo ra, phá hủy hay biến đổi chúng.**
 
-Giờ hãy thử mở console trình duyệt của bạn lên và chạy đoạn mã sau:
+Hãy thử mở console* trình duyệt của bạn lên chạy đoạn mã sau, xem cách mà chúng được log ra màn hình:
 
 ```jsx
 console.log(2);
@@ -65,7 +65,7 @@ console.log([]);
 console.log(x => x * 2);
 ```
 
-Thấy chúng được hiển thị khác biệt so với những giá trị nguyên thuỷ trước đó chứ? Tuỳ vào trình duyệt khác nhau thì chúng ta sẽ có những tương tác hoặc hiển thị khác nhau. Nếu bạn cài nhiều trình duyệt thì có thể thử so sánh sự khác biệt trong cách hiển thị object và function.
+Thấy chúng được hiển thị khác biệt so với những giá trị nguyên thuỷ trước đó chứ? Tuỳ vào trình duyệt khác nhau thì chúng ta sẽ có những tương tác hoặc hiển thị khác nhau. Nếu bạn cài nhiều trình duyệt thì có thể thử so sánh sự khác biệt trong cách hiển thị object* và function*.
 
 ## Kiểu dữ liệu
 
@@ -89,7 +89,7 @@ Sau gần 25 năm nghiên cứu, các nhà bác học chỉ tìm ra đượ 9 lo
 - Functions (x => x * 2 và ...): dùng để gọi tới các đoạn code
 
 ### Không còn kiểu nào khác
-Có thể bạn sẽ thắc mắc rằng: "Thế còn các kiểu dữ liệu khác thì sao? Giống như array ấy?".
+Có thể bạn sẽ thắc mắc rằng: "Thế còn các kiểu dữ liệu khác thì sao? Giống như array* ấy?".
 
 Trong JavaScript, không có kiểu dữ liệu nào khác ngoài các kiểu mà chúng ta đã liệt kê ở trên. Những thứ còn lại sẽ được coi là object hết! Ví dụ nhé như array, date, regex về cơ bản thì đều là object trong JavaScript:
 
@@ -99,20 +99,20 @@ console.log(typeof(new Date())); // "object"
 console.log(typeof(/(hello|goodbye)/)); // "object"
 ```
 
-```
-Fun Fact
+---
+### Fun Fact
 
-"Hmm hiểu rồi" - bạn đáp, "mọi thứ đều là object"! Trời ạ, thực sự có rất nhiều người truyền tai nhau điều đó nhưng nó hoàn toàn không chính xác chút nào.
+"Hmm hiểu rồi" - bạn đáp, "mọi thứ đều là `object`"! Trời ạ, thực sự có rất nhiều người truyền tai nhau điều đó nhưng nó hoàn toàn không chính xác chút nào.
 
-Mặc dù đúng là khi chạy đoạn code như "hi".toUpperCase() sẽ khiến "hi" giống như 1 object nhưng đừng để bị lừa. Sự thật là JavaScript đã tạo một object tạm thời để thực thi, sau đó object sẽ bị loại bỏ ngay sau đó. Đừng lo nếu bạn cảm thấy khó hiểu về cơ chế này!
+Mặc dù đúng là khi chạy đoạn code như `"hi".toUpperCase()` sẽ khiến `"hi"` giống như 1 object nhưng đừng để bị lừa. Sự thật là JavaScript đã tạo một object tạm thời để thực thi, sau đó object sẽ bị loại bỏ ngay sau đó. Đừng lo nếu bạn cảm thấy khó hiểu về cơ chế này!
 
-Điều bạn cần nhớ bây giờ đó là giá trị nguyên thuỷ (như string hoặc number) không phải là object.
+Điều bạn cần nhớ bây giờ đó là giá trị nguyên thuỷ (như `string` hoặc `number`) không phải là `object`.
 
 
-```
+---
 ### Kiểm tra kiểu
 
-Chỉ có 9 kiểu dữ liệu thôi, vậy làm thế nào để ta xác định được chúng?
+Có tới 9 kiểu dữ liệu trong JavaScript, vậy làm thế nào để ta xác định được chúng?
 ![Typeof](./medias/typeof.png)
 
 Nếu ta muốn kiểm tra kiểu của một giá trị, chúng ta có thể dùng toán tử `typeof`. Xem ví dụ ở phía dưới và thử ở console trình duyệt:
@@ -134,9 +134,9 @@ Bạn có câu hỏi ư? Tốt! Nếu bạn hỏi một câu hỏi thì vũ tr�
 
 ## Expressions
 
-Có rất nhiều câu hỏi mà JavaScript không thể trả lời được. Chẳng hạn như nếu bạn muốn biết liệu có nên thổ lộ cảm xúc với bff của bạn không hay tiếp tục chờ dợi cho tới khi cả hai biến thành bộ xương khô, JavaScript xin bó tay.
+Có rất nhiều câu hỏi mà JavaScript không thể trả lời được. Chẳng hạn như bạn muốn biết liệu có nên thổ lộ cảm xúc với bff của bạn không hay tiếp tục chờ đợi cho tới khi cả hai biến thành bộ xương khô, những kiểu câu hỏi như vậy thì JavaScript xin bó tay.
 
-Nhưng bên cạnh đó thì có rất nhiều câu hỏi mà JavaScript sẵn lòng để trả lời. Những câu hỏi đó được gọi là `expressions` - các biểu thức.
+Nhưng bên cạnh đó thì có rất nhiều câu hỏi mà JavaScript rất sẵn lòng để trả lời. Những câu hỏi đó được gọi là `expressions` - các biểu thức.
 
 Nếu chúng ta "hỏi" biểu thức như `2 + 2`, JavaScript sẽ "trả lời" với giá trị `4`.
 
@@ -144,7 +144,7 @@ Nếu chúng ta "hỏi" biểu thức như `2 + 2`, JavaScript sẽ "trả lời
 console.log(2 + 2); // 4
 ```
 
-Một ví dụ nữa, nhớ typeof chứ? Đó cũng được coi là một expression đấy! Câu hỏi củ chúng ta sẽ là typeof(2) và vũ trụ javaScript sẽ trả lời là "number"
+Một ví dụ nữa, nhớ `typeof` chứ? Đó cũng được coi là một expression đấy! Câu hỏi củ chúng ta sẽ là `typeof(2)` và vũ trụ JavaScript sẽ trả lời là `"number"`
 
 ```jsx
 console.log(typeof(2)); // "number"
