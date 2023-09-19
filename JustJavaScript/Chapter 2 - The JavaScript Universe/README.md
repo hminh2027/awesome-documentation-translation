@@ -128,7 +128,7 @@ console.log(typeof([])); // "object"
 console.log(typeof(x => x * 2)); // "function"
 ```
 
-[INSERT WEJIO HERE]
+[Using typeof.webm](https://github.com/hminh2027/awesome-documentation-translation/assets/57801022/5b118d7d-800e-4bc3-baa1-ab287d4777f9)
 
 Bạn có câu hỏi ư? Tốt! Nếu bạn hỏi một câu hỏi thì vũ trụ JavaScript sẽ trả lời, miễn là bạn biết cách hỏi.
 
@@ -152,7 +152,7 @@ console.log(typeof(2)); // "number"
 
 Expression là những câu hỏi mà JavaScript có thể trả lời được và đáp án của chúng luôn là một giá trị.
 
-[INSERT WEJIO HERE]
+[Expression.webm](https://github.com/hminh2027/awesome-documentation-translation/assets/57801022/b7d7bf70-88c7-418a-8446-30fc1af11590)
 
 ## Tóm lại
 
