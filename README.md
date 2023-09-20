@@ -2,15 +2,20 @@
 
 This repo exists for my personal learning purpose which contains documentation translated by me (therefore translation qualification should not be considered lol)
 
-| Name                          | Category            | Source | Trans To   | Status      | Progress |
-| ----------------------------- | ------------------- | ------ | ---------- | ----------- | -------- |
-| AZ900                         | Cloud               | Github | Vietnamese | Dropped     | 46%      |
-| Cracking The Coding Interview | Algo/DS + Framework | Book   | English    | Dropped     | _        |
-| Data Mining                   | Data                | Book   | Vietnamese | Closed      | x        |
-| Pragmatic Programmer          | Mindset             | Book   | Vietnamese | Dropped     | 10%      |
-| System Design Interview       | System + Framework  | Book   | Vietnamese | Dropped     | _        |
-| System Design Primer          | System              | Github | Vietnamese | Dropped     | 33%      |
-| Just JavaScript               | Mindset             | Book   | Vietnamese | In progress | 25%      |
+| Name                          | Category            | Source | Action      | Status      | Progress |
+| ----------------------------- | ------------------- | ------ | ----------- | ----------- | -------- |
+| AZ900                         | Cloud               | Github | Gist        | Dropped     | 46%      |
+| Cracking The Coding Interview | Algo/DS + Framework | Book   | Gist        | Dropped     | _        |
+| Data Mining                   | Data                | Book   | Translation | Closed      | x        |
+| Pragmatic Programmer          | Mindset             | Book   | Translation | Dropped     | 10%      |
+| System Design Interview       | System + Framework  | Book   | Translation | Dropped     | _        |
+| System Design Primer          | System              | Github | Translation | Dropped     | 33%      |
+| Just JavaScript               | Mindset             | Book   | Translation | In progress | 25%      |
+| Tao of React                  | Sys tem + Framework | Book   | Gist        | In progress | 0%       |
+
+Some actions:
+- **Gist**: note down important points by listing bulletpoints
+- **Translation**: translate original source from English to Vietnamese
 
 Some explanations for those categories:
 - **Cloud**: learn fundamentals of cloud concept and cloud service/provider (Azure in this case)
